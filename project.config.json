@@ -39,7 +39,7 @@
   "compileType": "miniprogram",
   "libVersion": "1.9.94",
   "appid": "wxaa832f2705b25c71",
-  "projectname": "蜂巢网课",
+  "projectname": "OnlineCourseMiniProgram",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
