@@ -1,0 +1,10 @@
+<!--pages/self/donate.wxml-->
+<view class="rect_img">
+  <image class="img" src="../../images/donate.png"></image>
+</view>
+
+<view class="mytext">
+  <text>\n\n\n这个小程序是我利用课余时间制作出来。\n如果对您有用的话，请多多分享给别人，谢谢。</text>
+  <text>\n\n家贫，无从无从致书以观</text>
+  <text>\n赏口饭吃吧，呜嘤呜嘤</text>
+</view>

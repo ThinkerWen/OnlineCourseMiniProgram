@@ -1,0 +1,25 @@
+/* pages/self/suggest.wxss */
+.box{
+  border: 1px solid #21A720;
+  margin: 20px;
+  border-radius: 5px;
+  height: 350px;
+}
+
+.box1{
+  border: 1px solid #21A720;
+  height: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 30px;
+}

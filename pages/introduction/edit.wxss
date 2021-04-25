@@ -1,0 +1,21 @@
+/* pages/introduction/edit.wxss */
+/* pages/self/suggest.wxss */
+.box{
+  border: 1px solid #E64340;
+  margin: 20px;
+  border-radius: 5px;
+  height: 350px;
+}
+
+.box1{
+  border: 1px solid #E64340;
+  height: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.mini-btn{
+  text-align: center;
+  /* margin-right: 10rpx; */
+}

@@ -1,0 +1,32 @@
+<!--pages/profile/profile.wxml-->
+<view class="img">
+  <image src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style="with:100%;height:50px;display:none;">授权登录</button>
+</view>
+<view class="usermotto">
+</view>
+<!-- <view class='img'>
+  <image src='/assets/images/avatar.png'></image>
+</view> -->
+<view class='content' wx:if="{{!edited}}">
+  <view class='separate'></view>
+  <text class='col'>昵称：   User</text>
+  <text class='col'>性别：   男</text>
+  <text class='col'>年龄：   18</text>
+  <text class='col'>学校：   </text>
+  <text class="col">Q Q：    </text>
+  <text class='col'>签名：   这个人很神秘，什么也没留下</text>
+  <view class='separate'></view>
+  <navigator url="../introduction/edit"><text class='col arrow'>编辑</text></navigator>
+</view>
+<view class='content' wx:if="{{edited}}">
+  <view class='separate'></view>
+  <text class='col'>昵称：   {{nickName}}</text>
+  <text class='col'>性别：   {{sex}}</text>
+  <text class='col'>年龄：   {{age}}</text>
+  <text class='col'>学校：   {{school}}</text>
+  <text class="col">Q Q：   {{qq}}</text>
+  <text class='col'>签名：   {{saying}}</text>
+  <view class='separate'></view>
+  <navigator url="../introduction/edit"><text class='col arrow'>编辑</text></navigator>
+</view>

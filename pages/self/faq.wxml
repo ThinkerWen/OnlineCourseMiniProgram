@@ -1,0 +1,16 @@
+<!--pages/faq/faq.wxml-->
+
+<view class='content'>
+  <view class='separate'></view>
+  <text class='col'>问：你们能搜到什么题？</text>
+  <text class='col'>答：我们能搜到大学课程中几乎所有的网课，智慧树，超星尔雅，马克思，毛概等，即使是平台上的专业课程也可以。</text>
+  <view class='separate'></view>
+  <text class='col'>问：为什么同一套课程里的题，有的可以搜到，有的搜不到？</text>
+  <text class='col'>答：题目短小的题建议您复制全文，这样搜索更加准确。如果题目很长建议您使用模糊搜索，只复制粘贴其中的一段话即可。</text>
+  <view class='separate'></view>
+  <text class='col'>问：你们这个平台收费吗？</text>
+  <text class='col'>答：我们是完全免费的，所以希望您能多多宣传和支持我们，如果对您有帮助，可以给我们捐助一点心意。</text>
+  <view class='separate'></view>
+  <text class='col'>问：你们还有其他优秀的功能吗？</text>
+  <text class='col'>答：我们还会陆续开发许多功能，同时我们有许多优秀的教程和自助平台，可以给我们提出建议，我们会认真考虑每一位用户的建议并作出答复。</text>
+</view>

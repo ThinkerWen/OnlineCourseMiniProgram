@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/self/self",
+    "pages/self/faq",
+    "pages/self/about",
+    "pages/self/suggest",
+    "pages/self/donate",
+    "pages/introduction/introduction",
+    "pages/introduction/edit"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF052F",
+    "navigationBarTitleText": "蜂巢网课",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "selectedColor": "#FF9900",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icons/search.png",
+        "selectedIconPath": "images/icons/search_selected.png",
+        "text": "搜题"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "iconPath": "images/icons/self.png",
+        "selectedIconPath": "images/icons/self_selected.png",
+        "text": "个人"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

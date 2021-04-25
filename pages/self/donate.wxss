@@ -1,0 +1,18 @@
+/* pages/self/donate.wxss */
+.rect_img{
+  text-align: center;
+}
+.img{
+  width: 300px;
+  height: 299px;
+}
+
+.mytext{
+  text-align: center;
+}
+
+.mytext text{
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: blue;
+}

@@ -1,0 +1,8 @@
+<!--pages/self/about.wxml-->
+<view class="image-parent">
+	<image src="../../images/about.png" mode="aspectFill" class="image"></image>
+	 <view class="child" style="margin-bottom:350px;">关于我</view>
+   <view class="child" style="margin-bottom:300px;">我是来自山东的一名学生，这个小程序是我兴趣使然，也是我为了大家的方便而制作。全部程序从前端到后端都是我独立完成，如有兴趣交流可以加我讨论。</view>
+   <view class="child" style="margin-bottom:100px;">QQ：296854007</view>
+   <view class="child" style="margin-bottom:78px;">微信：Rem_wife</view>
+</view>

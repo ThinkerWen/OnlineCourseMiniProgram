@@ -1,0 +1,14 @@
+<!--pages/introduction/edit.wxml-->
+<view class="section">
+  <form bindsubmit="bindFormSubmit">
+    <input class="box1" name="nickname" maxlength="10" style="margin-top:100px;" auto-focus placeholder="昵称" />
+    <input class="box1" name="sex" type="number" maxlength="1" auto-focus placeholder="性别" />
+    <input class="box1"  name="age" type="number" maxlength="3" auto-focus placeholder="年龄" />
+    <input class="box1" name="school" maxlength="21" auto-focus placeholder="学校" />
+    <input class="box1" name="qq" maxlength="11" auto-focus placeholder="QQ" />
+    <input class="box1" name="saying" maxlength="21" auto-focus placeholder="签名" />
+    <view style="text-align:center;">
+      <button form-type="submit" type="warn" size="mini">确认</button>
+    </view>
+  </form>
+</view>
