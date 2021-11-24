@@ -1,5 +1,5 @@
 const app = getApp();
-const API_BASE = 'https://www.hive-net.cn:8443/wechat/search/';
+const API_BASE = 'https://wangke.hive-net.cn/wechat/search/';
 
 Page({
   data: {
