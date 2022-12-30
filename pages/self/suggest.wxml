@@ -1,16 +1,8 @@
-<!--pages/self/suggest.wxml-->
-<!-- <view style='display:flex; flex-direction:column; height:900rpx; text-align:center;'> -->
-<view style="display:flex;text-align:center;height:84px;">
-<image style="margin-left:30px; height:84px; flex-grow:1;" src="../../images/ram.png"></image> 
-<image style="margin-left:170px; margin-right:30px; height:84px; flex-grow:1;" src="../../images/rem.png"></image>
-</view>
-
-<!-- </view> -->
-<view class="section">
+<view class="section" style="margin-top: 30px;">
   <form bindsubmit="bindFormSubmit">
     <input class="box1" name="mail" style="margin-top:5px;" auto-focus placeholder="您的QQ、微信，或者邮箱" />
     <input class="box1" name="name" auto-focus placeholder="您的称呼" />
-    <view class="box">
+    <view class="box" style="height: 250px;">
       <textarea maxlength="374" auto-height="false" style="padding:10px;width:360px;" placeholder="在这里写下建议" name="text" />
     </view>
     <button class="button-sp-area" form-type="submit" type="primary" plain="true"> 提交 </button>

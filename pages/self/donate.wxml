@@ -1,6 +1,6 @@
 <!--pages/self/donate.wxml-->
 <view class="rect_img">
-  <image class="img" src="../../images/donate.png"></image>
+  <image class="img" src="https://www.hive-net.cn/Assets/SiteGlobal/sponsor.png"></image>
 </view>
 
 <view class="mytext">

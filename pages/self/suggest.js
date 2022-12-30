@@ -1,5 +1,6 @@
 // pages/self/suggest.js
-const MY_API = 'https://www.hive-net.cn:8443/wechat/suggest/'
+var md5Util = require('../../utils/md5.js')
+const MY_API = 'https://www.hive-net.cn/funtools/system/suggest'
 Page({
   data: {
     height: 20,
@@ -29,24 +30,25 @@ Page({
   },
 
   sendMail: function() {
+    var timestamp = new Date().getTime();
+    var sign = this.signature(timestamp);
     wx.request({
       url: MY_API,
       method: 'POST',
       data: {
-        mail: this.data.mail,
+        contact: this.data.mail,
         name: this.data.name,
-        text: this.data.text
+        content: this.data.text,
+        timestamp: timestamp,
+        sign: sign
       },
       success: res => {
-        if (res.statusCode === 200) {
-          if(!res.data){
+        if (res.statusCode == 200 && res.data.code == 0) {
             wx.showToast({
-              title: '错误，请联系管理员',
+              title: '已收到您的建议，我们会尽快回复',
               icon: 'none',
               duration: 1000
             });
-            return;
-          }
         } else{
           wx.showToast({
             title: '错误，请联系管理员',
@@ -57,5 +59,13 @@ Page({
         }
       },
     })
+  },
+
+  signature: function(timestamp) {
+    // 加密方法隐藏
+    // Example
+    var sign = md5Util.hexMD5(timestamp);
+    console.log(sign);
+    return sign;
   }
 })

@@ -6,8 +6,8 @@
 }
 
 .image {
-  width: 350px;
-  height: 545px;
+  width: 300px;
+  height: 500px;
 }
 
 .child {

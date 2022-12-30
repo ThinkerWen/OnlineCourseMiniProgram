@@ -1,13 +1,10 @@
 <!--pages/profile/profile.wxml-->
 <view class="img">
   <image src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-  <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style="with:100%;height:50px;display:none;">授权登录</button>
+  <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style="width:100%;height:50px;display:none;">授权登录</button>
 </view>
 <view class="usermotto">
 </view>
-<!-- <view class='img'>
-  <image src='/assets/images/avatar.png'></image>
-</view> -->
 <view class='content' wx:if="{{!edited}}">
   <view class='separate'></view>
   <text class='col'>昵称：   User</text>

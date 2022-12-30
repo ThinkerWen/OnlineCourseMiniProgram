@@ -37,25 +37,15 @@
     "useApiHostProcess": true
   },
   "compileType": "miniprogram",
-  "libVersion": "1.9.94",
+  "libVersion": "2.29.0",
   "appid": "wxaa832f2705b25c71",
   "projectname": "OnlineCourseMiniProgram",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
     "miniprogram": {
       "list": [
         {
-          "id": -1,
           "name": "pages/self/suggest",
           "pathName": "pages/self/suggest",
           "query": "",
@@ -88,9 +78,18 @@
         {
           "name": "pages/self/suggest",
           "pathName": "pages/self/suggest",
+          "query": "",
           "scene": null
         }
       ]
     }
+  },
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
   }
 }

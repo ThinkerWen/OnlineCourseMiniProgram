@@ -1,12 +1,13 @@
 App({
 
   globalData: {
+    API_BASE: "https://www.hive-net.cn/backend/wangke",
     userInfo: null,
     openid: ''
   },
 
   //用户自定义的全局数据，可以通过var app = getApp()获取app实例，再通过     app.globalData.userInfo获取数据
-  getUserProfil: function (cb) {
+  getUserProfile: function (cb) {
     var that = this
     if (this.globalData.userInfo) {
       typeof cb == "function" && cb(this.globalData.userInfo)
@@ -39,7 +40,8 @@ App({
         if (res.code) {
           //发起网络请求
           wx.request({
-            url: 'https://www.hive-net.cn/',
+            // url替换为自己的登录接口
+            url: 'https://www.hive-net.cn/example',
             data: {
               code: res.code
             },

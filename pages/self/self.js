@@ -2,7 +2,9 @@ var app = getApp();
 const API_URL = 'http://localhost/swzl/shiwu/';
 Page({
   data: {
-    userInfo: {},
+    userInfo: {
+      avatarUrl: "https://www.hive-net.cn/Assets/SiteGlobal/avatars.png"
+    },
     openid: null
   },
 
@@ -12,6 +14,8 @@ Page({
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认
     // 开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
+    return;
+    //@Deprecated
     wx.getUserProfile({
       desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
       success: (res) => {
@@ -42,7 +46,9 @@ Page({
   onLoad: function () {
     var that = this;
 
-    app.getUserProfil(function (userInfo) {
+    return;
+    //@Deprecated
+    app.getUserProfile(function (userInfo) {
       that.setData({
         userInfo: userInfo
       })

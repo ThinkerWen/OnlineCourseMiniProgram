@@ -1,5 +1,4 @@
 const app = getApp();
-const API_BASE = 'https://wangke.hive-net.cn/wechat/search/';
 
 Page({
   data: {
@@ -43,21 +42,24 @@ Page({
       isInit: false
     })
     wx.request({
-      url: API_BASE,
+      url: app.globalData.API_BASE + "/search",
       data: {
         token: 'free',
         question: this.data.searchKey
       },
       success: res => {
-        if (res.statusCode === 200) {
+        console.log(res)
+        if (res.statusCode === 200 && res.data.code == 0) {
           this.setData({
-            question: res.data['question'],
-            reason: res.data['reason'],
-            hasReason: res.data['has_reason']==1 ? true : false
+            question: res.data.data.reasonList[0].question,
+            reason: res.data.data.reasonList[0].reason,
+            hasReason: true
           })
         } else{
           this.setData({
-            hasReason: false
+            hasReason: false,
+            question: this.data.searchKey,
+            reason: "暂无结果，我们已经收到您的需求，请过段时间再次前来查询。"
           })
           console.error('错误，请联系管理员');
         }
